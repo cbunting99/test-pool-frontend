@@ -18,8 +18,6 @@
             <div class="stats">
               <div class="card-separate-text"><i class="fa fa-cloud card-icon"></i> <span tkey="miningPoolHost"
                   class="card-label">Mining Pool Address</span>: <span id="miningPoolHost"></span></div>
-              <div class="card-separate-text"><i class="fa fa-cloud card-icon"></i> <span tkey="miningPoolHost"
-                    class="card-label">Mining Pool Address</span>: <span id="miningPoolHost2">185.74.222.212</span></div>
               <div class="card-separate-text"><i class="fa fa-cubes card-icon"></i> <span tkey="cnAlgorithm"
                   class="card-label">Algorithm</span>: <span id="cnAlgorithm"></span></div>
             </div>
@@ -389,6 +387,10 @@
       else if (cnAlgorithm == "cryptonight_conceal") {
         algorithm = 'Cryptonight Conceal';
         xmrstakAlgo = 'cryptonight_conceal';
+      }
+      else if (cnAlgorithm == "argon2") {
+        algorithm = 'Argon2id Chukwa';
+        xmrstakAlgo = 'argon2id/chukwa';
       }
       else if (cnAlgorithm == "cryptonight_heavy") {
         if (cnVariant === 1) {
