@@ -165,7 +165,7 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #868ba1;
+  color: #ffffff;
   text-align: left;
   background-color: #f0f2f7; }
 
@@ -2257,7 +2257,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.875rem;
-  color: #868ba1;
+  color: #ffffff;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3674,7 +3674,7 @@ tbody.collapse.show {
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
-    color: #868ba1;
+    color: #ffffff;
     background-color: #e9ecef; }
 
 .list-group-item {
@@ -4141,7 +4141,7 @@ button.close {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #868ba1; }
+  color: #ffffff; }
 
 .carousel {
   position: relative; }
@@ -6533,7 +6533,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-light {
   border-color: #ced4da;
-  color: #868ba1; }
+  color: #ffffff; }
   .btn-light:hover, .btn-light:focus {
     background-color: #fff; }
 
@@ -7663,16 +7663,16 @@ p {
         font-size: 13px; }
       .dropdown-media-list .media-body > div span {
         font-size: 12px;
-        color: #868ba1; }
+        color: #ffffff; }
     .dropdown-media-list .media-body > p {
       font-size: 12px;
-      color: #868ba1;
+      color: #ffffff;
       margin-bottom: 0; }
 
 .nav-tabs-dropdown .nav-link {
   border: 0;
   background-color: #e9ecef;
-  color: #868ba1; }
+  color: #ffffff; }
   .nav-tabs-dropdown .nav-link.active {
     border: 0;
     background-color: #fff;
@@ -8268,7 +8268,7 @@ textarea.parsley-error:active {
     display: block; }
 
 .nav-underline .nav-link {
-  color: #868ba1; }
+  color: #ffffff; }
   .nav-underline .nav-link::before {
     background-color: #343a40; }
   .nav-underline .nav-link.active {
@@ -9538,7 +9538,7 @@ textarea.parsley-error:active {
   stroke: rgba(255, 255, 255, 0.15); }
 
 .slim-chartist-dark .ct-label {
-  color: #868ba1; }
+  color: #ffffff; }
 
 .slim-chartist-dark .ct-series-a .ct-slice-pie,
 .slim-chartist-dark .ct-series-b .ct-slice-pie,
@@ -10511,7 +10511,7 @@ table.dataTable {
     font-weight: 500;
     font-size: 12px;
     text-transform: uppercase;
-    color: #868ba1;
+    color: #ffffff;
     padding: 0 0 5px;
     letter-spacing: 1px;
     border: 0;
@@ -10581,7 +10581,7 @@ table.dataTable {
       transition: all 0.2s ease-in-out;
       padding: 5px;
       background-color: #f8f9fa;
-      color: #868ba1;
+      color: #ffffff;
       padding: 6px 10px;
       display: block;
       font-weight: 400;
@@ -10590,10 +10590,10 @@ table.dataTable {
       border-radius: 1px; }
     .ui-datepicker .ui-datepicker-calendar td a:hover {
       background-color: #f0f2f7;
-      color: #868ba1; }
+      color: #ffffff; }
     .ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a {
       background-color: #f0f2f7;
-      color: #868ba1; }
+      color: #ffffff; }
 
 .ui-datepicker-multi .ui-datepicker-group {
   padding-right: 15px;
@@ -12515,7 +12515,7 @@ textarea.parsley-success:focus {
     justify-content: space-between;
     height: 45px;
     background-color: #f8f9fa;
-    color: #868ba1;
+    color: #ffffff;
     position: relative;
     padding: 0 20px; }
     .manager-left .nav-link + .nav-link {
@@ -12844,7 +12844,7 @@ textarea.parsley-success:focus {
     letter-spacing: 1px; }
   .dash-headline-item-three .item-desc {
     margin-bottom: 0;
-    color: #868ba1;
+    color: #ffffff;
     font-size: 12px; }
   .dash-headline-item-three .sparkline {
     position: relative;
@@ -12915,7 +12915,7 @@ textarea.parsley-success:focus {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 500;
-    color: #868ba1; }
+    color: #ffffff; }
     .card-customer-overview .card-header .nav-link.active {
       color: #1b84e7; }
     .card-customer-overview .card-header .nav-link + .nav-link::before {
@@ -13219,7 +13219,7 @@ textarea.parsley-success:focus {
       display: block; }
   .nav-statistics-wrapper .nav-link {
     padding: 0;
-    color: #868ba1; }
+    color: #ffffff; }
     .nav-statistics-wrapper .nav-link + .nav-link {
       margin-left: 20px; }
     .nav-statistics-wrapper .nav-link.active {
@@ -13230,7 +13230,7 @@ textarea.parsley-success:focus {
   justify-content: center;
   flex-direction: column; }
   .row-statistics > div:first-child a {
-    color: #868ba1;
+    color: #ffffff;
     display: inline-block; }
     .row-statistics > div:first-child a:hover, .row-statistics > div:first-child a:focus {
       color: #343a40; }
@@ -13606,7 +13606,7 @@ textarea.parsley-success:focus {
     .table-invoice tbody > tr > td:first-child .invoice-notes p {
       font-size: 13px;
       font-weight: 400;
-      color: #868ba1; }
+      color: #ffffff; }
 
 /********** RTL SUPPORT **********/
 /*********************************/
@@ -13926,7 +13926,7 @@ textarea.parsley-success:focus {
     align-items: flex-end; }
     .message-body .media-list .reverse .msg p {
       background-color: #dee2e6;
-      color: #868ba1; }
+      color: #ffffff; }
 
 .message-footer {
   position: absolute;
@@ -14815,7 +14815,7 @@ textarea.parsley-success:focus {
     letter-spacing: 1px;
     color: #343a40; }
   .card-recent-messages .card-header a {
-    color: #868ba1; }
+    color: #ffffff; }
 
 .card-recent-messages .media img {
   width: 30px;
@@ -15027,7 +15027,7 @@ textarea.parsley-success:focus {
     .card-quick-post nav a + a {
       margin-left: 5px; }
     .card-quick-post nav a:hover, .card-quick-post nav a:focus {
-      color: #868ba1; }
+      color: #ffffff; }
 
 .card-table .card-header {
   padding: 20px;
@@ -40528,7 +40528,7 @@ html {
 }
 
 .slim-logo span {
-  color: #868ba1;
+  color: #ffffff;
   font-weight: 400;  
 }
 
