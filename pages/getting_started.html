@@ -30,7 +30,6 @@
             <div class="stats">
               <div class="card-separate-text"><i class="fa fa-key card-icon"></i> <span tkey="usernameDesc"
                   class="card-label">This is your wallet address</span></div><br>
-                  Note: Solo mining is <kbd>NOT</kbd> possible on this pool!
             </div>
           </div>
         </div>
@@ -75,7 +74,7 @@
     </div>
   </div>
 
-  <div class="section-wrapper section-wrapper2">
+   <div class="section-wrapper">
     <!-- Configuration Generator -->
     <div class="card card card-margin">
       <!-- Mining Applications and Configuration Generator -->
@@ -103,10 +102,28 @@
           <div class="col-sm-6 col-xs-12">
             <div class="input-group field-margin">
               <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-exchange"></i></span>
+              </div>
+              <input class="form-control" id="gPaymentID" type="text" tplaceholder="paymentIdField"
+                placeholder="Payment ID for exchanges (optional)">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="input-group field-margin">
+              <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fa fa-server"></i></span>
               </div>
               <input class="form-control" id="gWorkerName" type="text" tplaceholder="workerNameField"
                 placeholder="Worker_Name">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="input-group field-margin">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-wrench"></i></span>
+              </div>
+              <input class="form-control" id="gDifficulty" type="text" tplaceholder="fixedDiffField"
+                placeholder="Fixed difficulty (optional)">
             </div>
           </div>
           <div class="col-md-12 push-up-5">
