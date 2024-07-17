@@ -40394,7 +40394,7 @@ a.hover-white-8:hover, a.hover-white-8:focus {
 
 .card-label {
   font-weight: bold;
-  color: #ff5722;
+  color: #ff3d00;
 }
 
 .card-icon {
@@ -40479,7 +40479,7 @@ body {
 
 .btn-primary {
   color: #333;
-  background-color: #ff5722 !important;
+  background-color: #ff3d00 !important;
 }
 
 .bg-primary-dark {
@@ -40488,9 +40488,9 @@ body {
 } 
 
 .btn-primary-outline {
-  color: #ff5722;
+  color: #ff3d00;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #ff5722 !important;
+  border: 1px solid #ff3d00 !important;
 }
 
 .btn-success-outline {
@@ -40533,7 +40533,7 @@ html {
 }
 
 .slim-logo a {
-  color: #ff5722 !important;
+  color: #ff3d00 !important;
 }
 
 .slim-navbar .nav-link .icon,
@@ -40544,11 +40544,11 @@ html {
 .headline-item-one .statement-link:focus,
 .dash-headline-item-three .item-label,
 .dash-headline-item-two .item-label {
-    color: #ff5722 !important;
+    color: #ff3d00 !important;
 }
 
 .dash-headline-item-one .statement-link {
-  border: 1px solid #ff5722;
+  border: 1px solid #ff3d00;
 }
 
 a, .tx-primary {
@@ -40556,11 +40556,11 @@ a, .tx-primary {
 }
 
 .slim-pagetitle {
-  border-left: 4px solid #ff5722;
+  border-left: 4px solid #ff3d00;
 }
 
 .ct-series-a .ct-area {
-  fill: #ff5722 !important;
+  fill: #ff3d00 !important;
   fill-opacity: .2;
 }
 
@@ -40572,7 +40572,7 @@ a, .tx-primary {
 
 .ct-series-a .ct-point,
 .ct-series-a .ct-line {
-  stroke: #ff5722 !important;
+  stroke: #ff3d00 !important;
 }
 
 .ct-series-b .ct-point,
@@ -40598,7 +40598,7 @@ a, .tx-primary {
 
 #blocksChartTitle {
   padding: 10px;
-  color: #ff5722;
+  color: #ff3d00;
 }
 
 .userChart .chart {
@@ -40633,7 +40633,7 @@ a, .tx-primary {
 }
 
 .slim-navbar .sub-item ul a:hover {
-  color: #ff5722 !important;
+  color: #ff3d00 !important;
 }
 
 @media only screen and (max-width: 500px) {
