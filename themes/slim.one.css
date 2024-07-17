@@ -1,4 +1,4 @@
-#ff3d00 {
+body {
   background-color: #282d31; }
 
 /******************** HEADER *********************/
@@ -154,8 +154,8 @@
 
 .table-reference thead tr th,
 .table-reference thead tr td,
-.table-reference t#ff3d00 tr th,
-.table-reference t#ff3d00 tr td {
+.table-reference tbody tr th,
+.table-reference tbody tr td {
   border-color: #343a40;
   color: #ffffff; }
 
@@ -285,16 +285,16 @@ hr {
     color: #ffffff;
     border-color: #343a40;
     font-weight: 500; }
-  .card-table .table t#ff3d00 tr th,
-  .card-table .table t#ff3d00 tr td {
+  .card-table .table tbody tr th,
+  .card-table .table tbody tr td {
     border-color: #343a40;
     color: #ffffff; }
-    .card-table .table t#ff3d00 tr th a,
-    .card-table .table t#ff3d00 tr td a {
+    .card-table .table tbody tr th a,
+    .card-table .table tbody tr td a {
       color: #e9ecef; }
-      .card-table .table t#ff3d00 tr th a:hover, .card-table .table t#ff3d00 tr th a:focus,
-      .card-table .table t#ff3d00 tr td a:hover,
-      .card-table .table t#ff3d00 tr td a:focus {
+      .card-table .table tbody tr th a:hover, .card-table .table tbody tr th a:focus,
+      .card-table .table tbody tr td a:hover,
+      .card-table .table tbody tr td a:focus {
         color: #f8f9fa; }
 
 .card-info h5 {
@@ -400,7 +400,7 @@ hr {
 .dropdown-media-list .media:hover, .dropdown-media-list .media:focus {
   background-color: #1c2023; }
 
-.dropdown-media-list .media-#ff3d00 > div p {
+.dropdown-media-list .media-body > div p {
   color: #fff; }
 
 .nav-tabs-dropdown .nav-link {
@@ -536,7 +536,7 @@ hr {
   border-width: 0; }
 
 [class*=" popover-head-"] .popover-header,
-[class*=" popover-head-"] .popover-#ff3d00 {
+[class*=" popover-head-"] .popover-body {
   border-width: 0; }
 
 /******************** PROGRESS ********************/
@@ -623,16 +623,16 @@ hr {
   background-color: #343a40;
   color: #ffffff; }
 
-.table-invoice t#ff3d00 tr th,
-.table-invoice t#ff3d00 tr td {
+.table-invoice tbody tr th,
+.table-invoice tbody tr td {
   border-color: #343a40;
   color: #ffffff; }
-  .table-invoice t#ff3d00 tr th:first-child,
-  .table-invoice t#ff3d00 tr td:first-child {
+  .table-invoice tbody tr th:first-child,
+  .table-invoice tbody tr td:first-child {
     color: #dee2e6; }
 
-.table-invoice t#ff3d00 tr:first-child th,
-.table-invoice t#ff3d00 tr:first-child td {
+.table-invoice tbody tr:first-child th,
+.table-invoice tbody tr:first-child td {
   border-color: #495057; }
 
 /******************** CONTACT MANAGER PAGE ********************/
@@ -674,17 +674,17 @@ hr {
 
 .table:not([class*=" table-colored"]) thead tr th,
 .table:not([class*=" table-colored"]) thead tr td,
-.table:not([class*=" table-colored"]) t#ff3d00 tr th,
-.table:not([class*=" table-colored"]) t#ff3d00 tr td {
+.table:not([class*=" table-colored"]) tbody tr th,
+.table:not([class*=" table-colored"]) tbody tr td {
   border-color: #343a40;
   color: #ffffff; }
 
-.table-striped t#ff3d00 tr:nth-child(odd) th,
-.table-striped t#ff3d00 tr:nth-child(odd) td {
+.table-striped tbody tr:nth-child(odd) th,
+.table-striped tbody tr:nth-child(odd) td {
   background-color: #262a2f; }
 
-.table-bordered t#ff3d00 tr:last-child th,
-.table-bordered t#ff3d00 tr:last-child td {
+.table-bordered tbody tr:last-child th,
+.table-bordered tbody tr:last-child td {
   border-bottom-color: #343a40; }
 
 /******************** DATA BASIC ********************/
@@ -722,15 +722,15 @@ hr {
 
 .table.dataTable {
   border-color: #343a40; }
-  .table.dataTable t#ff3d00 tr.odd td {
+  .table.dataTable tbody tr.odd td {
     background-color: #212529; }
-    .table.dataTable t#ff3d00 tr.odd td.sorting_1 {
+    .table.dataTable tbody tr.odd td.sorting_1 {
       background-color: #262a2f; }
-  .table.dataTable t#ff3d00 tr.even td {
+  .table.dataTable tbody tr.even td {
     background-color: #262a2f; }
-    .table.dataTable t#ff3d00 tr.even td.sorting_1 {
+    .table.dataTable tbody tr.even td.sorting_1 {
       background-color: #2a2f34; }
-  .table.dataTable t#ff3d00 tr:hover td, .table.dataTable t#ff3d00 tr:hover td.sorting_1 {
+  .table.dataTable tbody tr:hover td, .table.dataTable tbody tr:hover td.sorting_1 {
     background-color: #2c3237; }
   .table.dataTable.no-footer {
     border-bottom-color: #343a40; }
@@ -764,10 +764,10 @@ hr {
   .fc-toolbar .fc-button:hover, .fc-toolbar .fc-button:focus {
     background-color: #262a2f; }
 
-.fc-unthemed t#ff3d00 tr td {
+.fc-unthemed tbody tr td {
   background-color: #212529;
   border-color: #343a40; }
-  .fc-unthemed t#ff3d00 tr td.fc-today {
+  .fc-unthemed tbody tr td.fc-today {
     background-color: #262a2f; }
 
 /******************** TIMELINE PAGE ********************/
@@ -778,10 +778,10 @@ hr {
 .timeline-date {
   color: #fff; }
 
-.timeline-#ff3d00::before {
+.timeline-body::before {
   background-color: #212529; }
 
-.timeline-#ff3d00::after {
+.timeline-body::after {
   background-color: #343a40; }
 
 .post-item {
@@ -809,7 +809,7 @@ hr {
   .card-pricing-three .card-pricing h1 {
     color: #fff; }
 
-.card-pricing-three .card-#ff3d00 {
+.card-pricing-three .card-body {
   border-color: #343a40; }
 
 /******************** SIGNIN/UP PAGE ********************/
@@ -904,7 +904,7 @@ hr {
 .wizard .actions .disabled a {
   background-color: #343a40; }
 
-.wizard > .content > .#ff3d00 input {
+.wizard > .content > .body input {
   border-color: #495057; }
 
 .wizard-style-1 > .steps > ul a .number,
@@ -959,7 +959,7 @@ hr {
       border-color: #343a40; }
     .messages-list .media:hover, .messages-list .media:focus {
       background-color: #262a2f; }
-  .messages-list .media-#ff3d00 h6 {
+  .messages-list .media-body h6 {
     color: #fff; }
 
 .messages-right {
@@ -968,12 +968,12 @@ hr {
 
 .message-header {
   border-color: #343a40; }
-  .message-header .media .media-#ff3d00 h6 {
+  .message-header .media .media-body h6 {
     color: #fff; }
 
-.message-#ff3d00 {
+.message-body {
   background-color: #1c2023; }
-  .message-#ff3d00 .media-list .reverse .msg p {
+  .message-body .media-list .reverse .msg p {
     background-color: #343a40;
     color: #ffffff; }
 
@@ -986,12 +986,12 @@ hr {
   .card-recent-messages .card-header span {
     color: #fff; }
 
-.card-recent-messages .media-#ff3d00 h6 {
+.card-recent-messages .media-body h6 {
   color: #fff; }
 
-.card-map-widget .card-#ff3d00 {
+.card-map-widget .card-body {
   border-color: #343a40; }
-  .card-map-widget .card-#ff3d00 h6 {
+  .card-map-widget .card-body h6 {
     color: #fff; }
 
 .card-activities .media::before {
@@ -1003,7 +1003,7 @@ hr {
 .card-profile .profile-name {
   color: #fff; }
 
-.card-blog .card-#ff3d00 {
+.card-blog .card-body {
   border-color: #343a40; }
 
 .card-blog .blog-title a {
