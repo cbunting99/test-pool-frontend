@@ -220,10 +220,10 @@
   fill: #f05b4f; }
 
 .ct-series-j .ct-point, .ct-series-j .ct-line, .ct-series-j .ct-bar, .ct-series-j .ct-slice-donut {
-  stroke: #dda458; }
+  stroke: #ff3d00; }
 
 .ct-series-j .ct-slice-pie, .ct-series-j .ct-slice-donut-solid, .ct-series-j .ct-area {
-  fill: #dda458; }
+  fill: #ff3d00; }
 
 .ct-series-k .ct-point, .ct-series-k .ct-line, .ct-series-k .ct-bar, .ct-series-k .ct-slice-donut {
   stroke: #eacf7d; }
