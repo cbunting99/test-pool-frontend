@@ -274,8 +274,12 @@
 
     // Username
     var address = $('#gAddress').val().replace(/\s+/g, '').trim();
+    var paymentID = $('#gPaymentID').val().replace(/\s+/g, '').trim();
+    var difficulty = parseInt($('#gDifficulty').val().replace(/\s+/g, '').trim());
 
     var login = address ? address : 'YOUR_WALLET_ADDRESS';
+    if (paymentID) login = login + lastStats.config.paymentIdSeparator + paymentID;
+    if (difficulty) login = login + lastStats.config.fixedDiffSeparator + difficulty;
     updateTextClasses('exampleLogin', login);
 
     // Password
