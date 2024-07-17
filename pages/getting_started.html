@@ -8,7 +8,7 @@
     <h6 class="slim-pagetitle"><span tkey="gettingStarted">Getting Started</span></h6>
   </div><!-- slim-pageheader -->
 
-  <div class="section-wrapper section-wrapper2 marging-bottom">
+  <div class="section-wrapper marging-bottom">
     <div class="row">
       <div class="col-sm-6">
         <div class="card card-margin">
@@ -30,6 +30,14 @@
             <div class="stats">
               <div class="card-separate-text"><i class="fa fa-key card-icon"></i> <span tkey="usernameDesc"
                   class="card-label">This is your wallet address</span></div>
+              <div class="card-separate-text" id="paymentId"><i class="fa fa-exchange card-icon"></i> <span
+                  tkey="paymentId" class="card-label">Exchange Payment ID</span>: <span><u
+                    tkey="address">address</u><span id="paymentIdSeparator">.</span><u
+                    tkey="addrPaymentId">paymentID</u></span></div>
+              <div class="card-separate-text" id="fixedDiff"><i class="fa fa-wrench card-icon"></i> <span
+                  tkey="fixedDiff" class="card-label">Difficulty locking</span>: <span><u
+                    tkey="address">address</u><span id="fixedDiffSeparator">+</span><u tkey="addrDiff">diff</u></span>
+              </div>
             </div>
           </div>
         </div>
@@ -74,7 +82,7 @@
     </div>
   </div>
 
-   <div class="section-wrapper">
+  <div class="section-wrapper">
     <!-- Configuration Generator -->
     <div class="card card card-margin">
       <!-- Mining Applications and Configuration Generator -->
@@ -151,6 +159,40 @@
             </thead>
             <tbody id="miningApps_rows">
 
+              <!-- XMR Stak -->
+              <tr class="appInfo">
+                <td class="miningAppTitle">XMR Stak</td>
+                <td>CPU & GPU (AMD/NVIDIA)</td>
+                <td>Easy to use CPU + GPU Mining App</td>
+                <td><a class="btn btn-success-outline" target="_blank"
+                    href="https://github.com/fireice-uk/xmr-stak/releases/latest"><span
+                      tkey="download">Download</span></a></td>
+                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrstak"
+                    aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
+                </td>
+              </tr>
+              <tr class="appConfig">
+                <td colspan="5">
+                  <div class="collapse" id="xmrstak">
+
+                    <pre><code>"pool_list": [
+                {
+                    "pool_address": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
+                    "wallet_address": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
+                    "rig_id": "<span class="examplePassword">YOUR_WORKER_NAME</span>",
+                    "pool_password": "x",
+                    "use_nicehash": false,
+                    "use_tls": false, /* Set to true if you are using an SSL port */
+                    "tls_fingerprint": "",
+                    "pool_weight": 1
+                },
+            ],
+            "currency": "<span id="xmrstakAlgo"></span>",</code></pre>
+
+                  </div>
+                </td>
+              </tr>
+
               <!-- XMRig -->
               <tr class="appInfo">
                 <td class="miningAppTitle">XMRig</td>
@@ -164,23 +206,109 @@
               </tr>
               <tr class="appConfig">
                 <td colspan="5">
-                  <div class="collapse show" id="xmrig">
+                  <div class="collapse" id="xmrig">
 
-  <pre><code>"pools": [
-	{
-		"variant": "<span id="xmrstakAlgo"></span>",
-		"url": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
-		"user": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
-		"pass": "<span class="examplePassword">YOUR_WORKER_NAME</span>",
-		"rig_id": null,
-		"nicehash": false,
-		"keepalive": false,
-		"enabled": true,
-		"tls": false,
-		"tls_fingerprint": null,
-	},
-  ],</code></pre>
+                    <pre><code>"pools": [
+                {
+                    "url": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
+                    "user": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
+                    "pass": "<span class="examplePassword">YOUR_WORKER_NAME</span>",
+                    "keepalive": true,
+                    "nicehash": false,
+                    "variant": 1
+                }
+            ],</code></pre>
 
+                  </div>
+                </td>
+              </tr>
+
+              <!-- XMRig-AMD -->
+              <tr class="appInfo">
+                <td class="miningAppTitle">XMRig-AMD</td>
+                <td>OpenCL (AMD)</td>
+                <td>XMRIG version for AMD GPU</td>
+                <td><a class="btn btn-success-outline" target="_blank"
+                    href="https://github.com/xmrig/xmrig-amd/releases/latest"><span tkey="download">Download</span></a>
+                </td>
+                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrig-amd"
+                    aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
+                </td>
+              </tr>
+              <tr class="appConfig">
+                <td colspan="5">
+                  <div class="collapse" id="xmrig-amd">
+
+                    <pre><code>"pools": [
+                {
+                    "url": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
+                    "user": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
+                    "pass": "<span class="examplePassword">YOUR_WORKER_NAME</span>"
+                    "keepalive": true,
+                    "nicehash": false,
+                    "variant": 1
+                }
+            ],</code></pre>
+
+                  </div>
+                </td>
+              </tr>
+
+              <!-- XMRig-NVIDIA -->
+              <tr class="appInfo">
+                <td class="miningAppTitle">XMRig-NVIDIA</td>
+                <td>Cuda (Nvidia)</td>
+                <td>XMRIG version for Nvidia GPU</td>
+                <td><a class="btn btn-success-outline" target="_blank"
+                    href="https://github.com/xmrig/xmrig-nvidia/releases/latest"><span
+                      tkey="download">Download</span></a></td>
+                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrig-nvidia"
+                    aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
+                </td>
+              </tr>
+              <tr class="appConfig">
+                <td colspan="5">
+                  <div class="collapse" id="xmrig-nvidia">
+
+                    <pre><code>"pools": [
+                {
+                    "url": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
+                    "user": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
+                    "pass": "<span class="examplePassword">YOUR_WORKER_NAME</span>"
+                    "keepalive": true,
+                    "nicehash": false,
+                    "variant": 1
+                }
+            ],</code></pre>
+
+                  </div>
+                </td>
+              </tr>
+
+              <!-- XMRigCC -->
+              <tr class="appInfo">
+                <td class="miningAppTitle">XMRigCC</td>
+                <td>CPU</td>
+                <td>XMRIG Fork, optimized with remote control</td>
+                <td><a class="btn btn-success-outline" target="_blank"
+                    href="https://github.com/Bendr0id/xmrigCC/releases/latest"><span tkey="download">Download</span></a>
+                </td>
+                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrig-cc"
+                    aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
+                </td>
+              </tr>
+              <tr class="appConfig">
+                <td colspan="5">
+                  <div class="collapse" id="xmrig-cc">
+                    <pre><code>"pools": [
+                                        {
+                                            "url": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
+                                            "user": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
+                                            "pass": "<span class="examplePassword">YOUR_WORKER_NAME</span>",
+                                            "keepalive": true,
+                                            "nicehash": false
+                                        },
+                                    ],</code></pre>
                   </div>
                 </td>
               </tr>
@@ -234,29 +362,67 @@
       if (!lastStats.config.fixedDiffEnabled) $('#fixedDiff').hide();
 
       var coin = lastStats.config.coin.toLowerCase() || null;
-      var cnAlgorithm = lastStats.config.cnAlgorithm || "argon2id/chukwa";
+      var cnAlgorithm = lastStats.config.cnAlgorithm || "cryptonight";
       var cnVariant = lastStats.config.cnVariant || 0;
-
-      algorithm = 'Argon2Id Chukwa';
-      xmrstakAlgo = 'argon2id/chukwa';
-
-      /*
-      if (coin == 'aeon') xmrstakAlgo = 'aeon7';
-      if (coin == 'bbscoin') xmrstakAlgo = 'bbscoin';
-      if (coin == 'croat') xmrstakAlgo = 'croat';
-      if (coin == 'edollar') xmrstakAlgo = 'edollar';
-      if (coin == 'electroneum') xmrstakAlgo = 'electroneum';
-      if (coin == 'graft') xmrstakAlgo = 'graft';
-      if (coin == 'haven') xmrstakAlgo = 'haven';
-      if (coin == 'intense') xmrstakAlgo = 'intense';
-      if (coin == 'ipbc') xmrstakAlgo = 'ipbc';
-      if (coin == 'karbo') xmrstakAlgo = 'karbo';
-      if (coin == 'masari') xmrstakAlgo = 'masari';
-      if (coin == 'monero') xmrstakAlgo = 'monero7';
-      if (coin == 'stellite') xmrstakAlgo = 'stellite';
-      if (coin == 'sumokoin') xmrstakAlgo = 'sumokoin';
-      if (coin == 'turtlecoin') xmrstakAlgo = 'turtlecoin';
-      */
+   
+         
+      if (cnAlgorithm == "cryptonight_light") {
+        if (cnVariant === 1) {
+          algorithm = 'Cryptonight Light (Aeon v7)';
+          xmrstakAlgo = 'cryptonight_lite_v7';
+        } else if (cnVariant === 2) {
+          algorithm = 'Cryptonight Light (IPBC)';
+          xmrstakAlgo = 'cryptonight_lite_v7_xor';
+        } else {
+          algorithm = 'Cryptonight Light (Original)';
+          xmrstakAlgo = 'cryptonight_lite';
+        }
+      }
+      if (cnAlgorithm == "ethash") {
+        if (cnVariant === 2) {
+          algorithm = 'ProgPowZ';
+          xmrstakAlgo = 'ProgPowZ';
+        } 
+      }
+      else if (cnAlgorithm == "cryptonight_conceal") {
+        algorithm = 'Cryptonight Conceal';
+        xmrstakAlgo = 'cryptonight_conceal';
+      }
+      else if (cnAlgorithm == "argon2") {
+        algorithm = 'Argon2id Chukwa';
+        xmrstakAlgo = 'argon2id/chukwa';
+      }
+      else if (cnAlgorithm == "cryptonight_heavy") {
+        if (cnVariant === 1) {
+          algorithm = 'Crytonight Heavy (Haven)';
+          xmrstakAlgo = 'haven';
+        } else {
+          algorithm = 'Cryptonight Heavy';
+          xmrstakAlgo = 'cryptonight_heavy';
+        }
+      }
+      else {
+        if (cnVariant === 1) {
+          algorithm = 'Cryptonight (Monero v7)';
+          xmrstakAlgo = 'cryptonight_v7';
+        } else if (cnVariant === 9) {
+          algorithm = 'Cryptonight (Stellite v7)';
+          xmrstakAlgo = 'cryptonight_v7_stellite';
+        } else if (cnVariant === 4) {
+          algorithm = 'Cryptonight Fast (Masari)';
+          xmrstakAlgo = 'cryptonight_masari';
+        } else if (cnVariant === 2) {
+          algorithm = 'Cryptonight (Monero v8)';
+          xmrstakAlgo = 'cryptonight_v8';
+        } else if (cnVariant === 8) {
+          algorithm = 'Cryptonight (Monero v8)';
+          xmrstakAlgo = 'cryptonight_v8';
+        } else {
+          algorithm = 'Cryptonight (Original)';
+          xmrstakAlgo = 'cryptonight';
+        }
+      }
+      
 
       updateText('cnAlgorithm', algorithm);
       updateText('xmrstakAlgo', xmrstakAlgo);
