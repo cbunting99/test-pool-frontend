@@ -159,6 +159,40 @@
             </thead>
             <tbody id="miningApps_rows">
 
+              <!-- XMR Stak -->
+              <tr class="appInfo">
+                <td class="miningAppTitle">XMR Stak</td>
+                <td>CPU & GPU (AMD/NVIDIA)</td>
+                <td>Easy to use CPU + GPU Mining App</td>
+                <td><a class="btn btn-success-outline" target="_blank"
+                    href="https://github.com/fireice-uk/xmr-stak/releases/latest"><span
+                      tkey="download">Download</span></a></td>
+                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrstak"
+                    aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
+                </td>
+              </tr>
+              <tr class="appConfig">
+                <td colspan="5">
+                  <div class="collapse" id="xmrstak">
+
+                    <pre><code>"pool_list": [
+                {
+                    "pool_address": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
+                    "wallet_address": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
+                    "rig_id": "<span class="examplePassword">YOUR_WORKER_NAME</span>",
+                    "pool_password": "x",
+                    "use_nicehash": false,
+                    "use_tls": false, /* Set to true if you are using an SSL port */
+                    "tls_fingerprint": "",
+                    "pool_weight": 1
+                },
+            ],
+            "currency": "<span id="xmrstakAlgo"></span>",</code></pre>
+
+                  </div>
+                </td>
+              </tr>
+
               <!-- XMRig -->
               <tr class="appInfo">
                 <td class="miningAppTitle">XMRig</td>
@@ -213,40 +247,6 @@
 				"nicehash": false
 			},
 		],</code></pre>
-                  </div>
-                </td>
-              </tr>
-
-              <!-- XMR Stak -->
-              <tr class="appInfo">
-                <td class="miningAppTitle">XMR Stak</td>
-                <td>CPU & GPU (AMD/NVIDIA)</td>
-                <td>Easy to use CPU + GPU Mining App</td>
-                <td><a class="btn btn-success-outline" target="_blank"
-                    href="https://github.com/fireice-uk/xmr-stak/releases/latest"><span
-                      tkey="download">Download</span></a></td>
-                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrstak"
-                    aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
-                </td>
-              </tr>
-              <tr class="appConfig">
-                <td colspan="5">
-                  <div class="collapse" id="xmrstak">
-
-                    <pre><code>"pool_list": [
-                {
-                    "pool_address": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
-                    "wallet_address": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
-                    "rig_id": "<span class="examplePassword">YOUR_WORKER_NAME</span>",
-                    "pool_password": "x",
-                    "use_nicehash": false,
-                    "use_tls": false, /* Set to true if you are using an SSL port */
-                    "tls_fingerprint": "",
-                    "pool_weight": 1
-                },
-            ],
-            "currency": "<span id="xmrstakAlgo"></span>",</code></pre>
-
                   </div>
                 </td>
               </tr>
