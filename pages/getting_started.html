@@ -304,7 +304,7 @@
       var cnAlgorithm = lastStats.config.cnAlgorithm || "randomx";
       var cnVariant = lastStats.config.cnVariant || 0;
    
-         
+/*         
       if (cnAlgorithm == "cryptonight_light") {
         if (cnVariant === 1) {
           algorithm = 'Cryptonight Light (Aeon v7)';
@@ -361,7 +361,10 @@
           xmrstakAlgo = 'cryptonight';
         }
       }
-      
+      */
+	  
+      algorithm = 'RandomX';
+      xmrstakAlgo = 'randomx';
 
       updateText('cnAlgorithm', algorithm);
       updateText('xmrstakAlgo', xmrstakAlgo);
